@@ -208,6 +208,8 @@ img {
 }
 .btn:hover {
   background-color: #ca1b36;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .section {
@@ -313,6 +315,7 @@ img {
 }
 
 .benefits-section {
+  border-bottom: 1px solid red;
   position: relative;
 }
 .benefits-section:before {
@@ -326,4 +329,121 @@ img {
   position: absolute;
   bottom: -20px;
   left: 25%;
+}
+
+.reviews__display {
+  background-color: #f8faf9;
+  padding: 42px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.reviews__display:before {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -65px;
+}
+
+.reviews__display-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__avatar {
+  width: 253px;
+  height: 264px;
+}
+
+.reviews__avatar-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 30% 0;
+     object-position: 30% 0;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 38px;
+}
+
+.reviews__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 22px;
+}
+
+.reviews__text {
+  line-height: 1.2;
+  padding-right: 60px;
+  margin-bottom: 36px;
+}
+
+.reviews__author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.reviews__switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.interactive-avatar {
+  width: 78px;
+  height: 78px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.interactive-avatar--active {
+  border-color: #e01f3d;
+}
+.interactive-avatar:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+
+.interactive-avatar__img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.interactive-avatar__img:first-child {
+  -o-object-position: 25% 0;
+     object-position: 25% 0;
 }
