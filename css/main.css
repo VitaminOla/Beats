@@ -205,11 +205,25 @@ img {
   background-color: #e01f3d;
   color: #fff;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
 }
 .btn:hover {
   background-color: #ca1b36;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+.btn--theme--transparent {
+  background: transparent;
+  text-transform: none;
+  cursor: pointer;
+  padding: 18px 16px;
+}
+.btn--theme--transparent:hover {
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #e01f3d;
 }
 
 .section {
@@ -446,4 +460,132 @@ img {
 .interactive-avatar__img:first-child {
   -o-object-position: 25% 0;
      object-position: 25% 0;
+}
+
+.order-section {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+.order-section:before {
+  content: url("../img/decor/Polygon.png");
+  position: absolute;
+  top: -20px;
+  right: 25%;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 30px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.form__block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  padding: 18px 12px;
+  border: solid 3px transparent;
+  border-radius: 4px;
+}
+.form__input--textarea {
+  height: 150px;
+  resize: none;
+  margin-bottom: 28px;
+}
+.form__input:focus {
+  border-color: #e01f3d;
+  outline: none;
+}
+
+.form__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.form__btns {
+  margin-left: -5px;
+}
+
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 4px;
+  margin-top: -20px;
+}
+.radio--checkbox .radio__visible:before {
+  background: url("../img/icons/tick.png") center center no-repeat;
+}
+.radio--checkbox .radio__title {
+  margin-top: -20px;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+}
+.radio__visible:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #e01f3d;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.radio__title {
+  padding: 0 15px;
 }

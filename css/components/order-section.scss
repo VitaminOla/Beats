@@ -1,0 +1,12 @@
+.order-section {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+
+  &:before {
+    content: url("../img/decor/Polygon.png");
+    position: absolute;
+    top: -20px;
+    right: 25%;
+  }
+}
