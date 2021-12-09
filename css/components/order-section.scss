@@ -6,7 +6,7 @@
   &:before {
     content: url("../img/decor/Polygon.png");
     position: absolute;
-    top: -20px;
+    top: rem(-20px);
     right: 25%;
   }
 }

@@ -1,18 +1,18 @@
 .benefits-section {
-  border-bottom: 1px solid red;
+  border-bottom: rem(1px) solid red;
   position: relative;
 
   &:before {
     content: url("../img/decor/decor1.png");
     position: absolute;
-    top: -20px;
+    top: rem(-20px);
     right: 30%;
   }
 
   &:after {
     content: url("../img/decor/decor2-triangle.png");
     position: absolute;
-    bottom: -20px;
+    bottom: rem(-20px);
     left: 25%;
   }
 }

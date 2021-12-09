@@ -1,21 +1,21 @@
 .reviews__display {
   background-color: #f8faf9;
-  padding: 42px;
-  margin-bottom: 15px;
+  padding: rem(42px);
+  margin-bottom: rem(15px);
   overflow: hidden;
   position: relative;
 
   &:before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
 }
 
@@ -24,8 +24,8 @@
 }
 
 .reviews__avatar {
-  width: 253px;
-  height: 264px;
+  width: rem(253px);
+  height: rem(264px);
   // overflow: hidden;
 }
 
@@ -38,24 +38,24 @@
 
 .reviews__content {
   flex: 1;
-  margin-left: 38px;
+  margin-left: rem(38px);
 }
 
 .reviews__title {
-  font-size: 24px;
+  font-size: rem(24px);
   font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 22px;
+  margin-top: rem(30px);
+  margin-bottom: rem(22px);
 }
 
 .reviews__text {
   line-height: 1.2;
-  padding-right: 60px;
-  margin-bottom: 36px;
+  padding-right: rem(60px);
+  margin-bottom: rem(36px);
 }
 
 .reviews__author {
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: bold;
 }
 
