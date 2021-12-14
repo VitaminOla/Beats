@@ -7,8 +7,29 @@
 
 .hero__title-section {
   width: 38%;
+
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &:before {
+      content: url("../img/decor/BigBeats.png");
+      transform: scale(calc(323 / 489));
+      margin-bottom: rem(-20px);
+    }
+  }
 }
 
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
+}
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -16,20 +37,34 @@
   height: 100%;
   padding: rem(24px) 0 rem(50px);
   background: url("../img/decor/BigBeats.png") right center / 50% auto no-repeat;
+
+  @include tablets {
+    background: none;
+  }
 }
 
 .hero__main-title {
   font-size: rem(48px);
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: rem(22px);
+  margin-bottom: rem(10px);
   text-transform: uppercase;
+
+  @include tablets {
+    padding: 0 6%;
+    letter-spacing: 2px;
+  }
 }
 
 .hero__title-desc {
   font-size: rem(21px);
   line-height: 1.2;
-  margin-bottom: rem(36px);
+  margin-bottom: rem(32px);
   padding-right: 10%;
   font-family: "Alegreya Sans", sans-serif;
+
+  @include tablets {
+    font-size: rem(22px);
+    padding: 0 24%;
+  }
 }

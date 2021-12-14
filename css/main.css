@@ -3,6 +3,16 @@
 html {
   font-size: 16px;
 }
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
 
 html,
 body {
@@ -87,6 +97,40 @@ img {
 .hero__title-section {
   width: 38%;
 }
+@media screen and (max-width: 768px) {
+  .hero__title-section {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .hero__title-section:before {
+    content: url("../img/decor/BigBeats.png");
+    -webkit-transform: scale(calc(323 / 489));
+            transform: scale(calc(323 / 489));
+    margin-bottom: -1.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__icons-section {
+    display: none;
+  }
+}
 
 .hero__container {
   display: -webkit-box;
@@ -103,30 +147,47 @@ img {
   padding: 1.5rem 0 3.125rem;
   background: url("../img/decor/BigBeats.png") right center/50% auto no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .hero__container {
+    background: none;
+  }
+}
 
 .hero__main-title {
   font-size: 3rem;
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: 1.375rem;
+  margin-bottom: 0.625rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .hero__main-title {
+    padding: 0 6%;
+    letter-spacing: 2px;
+  }
 }
 
 .hero__title-desc {
   font-size: 1.3125rem;
   line-height: 1.2;
-  margin-bottom: 2.25rem;
+  margin-bottom: 2rem;
   padding-right: 10%;
   font-family: "Alegreya Sans", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .hero__title-desc {
+    font-size: 1.375rem;
+    padding: 0 24%;
+  }
 }
 
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -134,10 +195,31 @@ img {
   padding-right: 1.5625rem;
 }
 
+@media screen and (max-width: 768px) {
+  .phone-number.header__phone-number {
+    display: none;
+  }
+}
+
+.menu {
+  margin: 0 30px;
+  padding-top: 7px;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -159,6 +241,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 7px;
+}
+
+.phone-number__icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .phone-number__icon-elem {
@@ -167,8 +255,13 @@ img {
   margin-right: 0.375rem;
 }
 
+.phone-number__text {
+  white-space: nowrap;
+}
+
 .menu__link {
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .features {
@@ -600,6 +693,11 @@ img {
   right: 3%;
   z-index: 100;
 }
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
 
 .fixed-menu__item {
   margin-bottom: 0.3125rem;
@@ -631,4 +729,31 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.hamburger {
+  width: 24px;
+  height: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.hamburger__plank {
+  display: block;
+  background: #000;
+  height: 4px;
+  border-radius: 10px;
 }
