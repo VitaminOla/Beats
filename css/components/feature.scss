@@ -6,6 +6,16 @@
   width: 41px;
   margin-right: 12px;
 }
+.feature__ic {
+  width: 41px;
+  height: 41px;
+  fill: #000;
+
+  &:hover {
+    fill: #e01f3d;
+  }
+}
+
 .feature__text {
   max-width: 114px;
 }
