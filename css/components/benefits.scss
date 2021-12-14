@@ -4,8 +4,12 @@
 
 .benefits__item {
   flex: 1;
-  padding: 0 5%;
+  padding: 0 3%;
   position: relative;
+
+  // @include tablets {
+  //   padding: 0 2%;
+  // }
 
   &:before {
     content: url("../img/decor/separator.png");
@@ -13,6 +17,10 @@
     top: rem(60px);
     right: 0;
     transform: translateX(50%);
+
+    @include tablets {
+      display: none;
+    }
   }
   &:first-child {
     padding-left: 0;

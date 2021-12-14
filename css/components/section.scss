@@ -12,4 +12,8 @@
   margin-bottom: rem(55px);
   text-align: center;
   text-transform: uppercase;
+
+  @include tablets {
+    letter-spacing: 2px;
+  }
 }
