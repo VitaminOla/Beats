@@ -614,6 +614,15 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 18%;
+  }
+}
 
 .form__col {
   -webkit-box-flex: 1;
@@ -623,6 +632,11 @@ img {
 }
 .form__col:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .form__col {
+    margin-right: 0;
+  }
 }
 
 .form__row {
@@ -654,9 +668,20 @@ img {
   resize: none;
   margin-bottom: 1.75rem;
 }
+@media screen and (max-width: 768px) {
+  .form__input--textarea {
+    height: 5.125rem;
+    margin-bottom: 0.875rem;
+  }
+}
 .form__input:focus {
   border-color: #e01f3d;
   outline: none;
+}
+@media screen and (max-width: 768px) {
+  .form__input {
+    padding: 0.4375rem 0.75rem;
+  }
 }
 
 .form__controls {
@@ -670,6 +695,20 @@ img {
 
 .form__btns {
   margin-left: -0.3125rem;
+}
+@media screen and (max-width: 768px) {
+  .form__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.form__title {
+  margin-bottom: 8px;
 }
 
 .radio {
