@@ -18,9 +18,13 @@
     text-align: center;
 
     &:before {
-      content: url("../img/decor/BigBeats.png");
-      transform: scale(calc(323 / 489));
-      margin-bottom: rem(-20px);
+      content: "";
+      // transform: scale(calc(323 / 489));
+      margin-bottom: rem(49px);
+      width: rem(323px);
+      height: rem(323px);
+      background: url("../img/decor/BigBeats.png") center center / contain
+        no-repeat;
     }
   }
 }
@@ -54,6 +58,12 @@
     padding: 0 6%;
     letter-spacing: 2px;
   }
+
+  @include phones {
+    padding: 0 8%;
+    font-size: rem(37px);
+    letter-spacing: 0;
+  }
 }
 
 .hero__title-desc {
@@ -66,5 +76,10 @@
   @include tablets {
     font-size: rem(22px);
     padding: 0 24%;
+  }
+
+  @include phones {
+    font-size: rem(24px);
+    padding: 0 14%;
   }
 }

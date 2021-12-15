@@ -16,4 +16,9 @@
   @include tablets {
     letter-spacing: 2px;
   }
+
+  @include phones {
+    font-size: rem(36px);
+    letter-spacing: 0px;
+  }
 }
