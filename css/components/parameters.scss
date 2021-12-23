@@ -1,0 +1,44 @@
+.parameters {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.parameters__button {
+  width: 90px;
+  height: 90px;
+  background: #9a9a9a;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.parameters__button-icon {
+  margin-bottom: 6px;
+}
+
+.parameters__button-icon-elem {
+  fill: currentColor;
+  width: 51px;
+  height: 51px;
+  display: block;
+}
+
+// .parameters__button-text {
+//   line-height: 1;
+// }
+
+.parameters {
+  &:hover {
+    .parameters__button {
+      background: #6e6e6e;
+    }
+    .parameters__dropdown {
+      left: 100%;
+      opacity: 1;
+    }
+  }
+}
